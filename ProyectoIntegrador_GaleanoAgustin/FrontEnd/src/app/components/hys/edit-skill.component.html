@@ -1,0 +1,34 @@
+<body class="mogumbo">
+    <div class="container" *ngIf="skill">
+        <div class="row">
+    
+            <div class="logo">
+                <img src="../../../assets/LogosProyecto/APLogo.png" id="logoAP">
+            </div>
+    
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">Habilidad</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="porcentaje">Ingreese el porcentaje</label>
+                        <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Actualizar habilidad
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+    
+    <footer>
+    
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br>
+        
+        <p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
+        </footer>

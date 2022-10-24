@@ -1,0 +1,52 @@
+<body class="mogumbo">
+
+    <div class="container" *ngIf="persona">
+        <div class="row">
+            
+            <div class="logo">
+                <img src="../../../assets/LogosProyecto/APLogo.png" id="logoAP">
+            </div>
+            
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre"
+                            [(ngModel)]="persona.nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido"
+                            [(ngModel)]="persona.apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion de sus estudios</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion"
+                            [(ngModel)]="persona.descripcion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Imagen</label>
+                        <input type="file" class="form-control" id="img" name="img"
+                            [(ngModel)]="persona.img" (change)="upLoadImage($event)" accept=".jpg, .jpeg, .png">
+                    </div>
+                    <div class="imagen">
+                        <img [src]= "imageS.url" width="200px">
+                    </div>
+
+                    <br>
+                    <button class="btn btn-primary">
+                        Editar persona
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+<p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
+</footer>

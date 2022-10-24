@@ -1,18 +1,22 @@
+
+<div class="Col -lg-1">
+    <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
+        Editar persona
+    </button>
+</div>
     <div class="row">
+
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src="../../../assets/LogosProyecto/" id="fotoDePerfil" class="img-fluid">
+            <img src="{{persona.img}}" id="fotoDePerfil" class="img-fluid">
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2">
             <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
             <p> Administración | Logistica | ComEx | Full Stack Developer Jr | Finanzas | Data Analysis </p>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-8">
+        <div class="col-xs-12 col-sm-8 col-md-8 descripcion">
             <span>
                 <h1>Acerca de Mi</h1>
-                <p>Agente de cambio, creativo, facilidad para los idiomas y las relaciones sociales,
-                     actitud de servicio, trabajo en equipo, liderazgo, experiencia en coordinación de grupos,
-                      proactivo, facilidad de aprendizaje, dinámico, responsable, dispuesto a enfrentar nuevos desafios
-                       y gran adaptación.
+                <p>{{persona.descripcion}}
                 </p>
             </span>
         </div>

@@ -1,51 +1,35 @@
 <div class="row">
     <h1>Educación</h1>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar educación
+        </button>
+    </div>
+
+    <br>
     <br>
     <br>
 
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li>
-            <h2>Licenciatura en Comercio Exterior - Universidad de Congreso</h2> <h4> Mendoza, Argentina (2012 - 2017)</h4>
-             </li>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Aut sunt asperiores enim, vero recusandae 
-            repellendus ipsa tempora praesentium libero doloribus tenetur
-             adipisci quas natus, corporis odio culpa! Distinctio, reiciendis hic!
-             </p>
-     </ul>
-        <ul>
-         <li>
-            <h2>Tecnicatura en Comercio Exterior</h2> - <h4>Mendoza, Argentina (2012 - 2017)</h4>
-         </li>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Aut sunt asperiores enim, vero recusandae 
-            repellendus ipsa tempora praesentium libero doloribus tenetur
-             adipisci quas natus, corporis odio culpa! Distinctio, reiciendis hic!
-         </p>
-     </ul>
-     <ul>
-        <li>
-            <h2>Bachillerato - Lycée Notre Dame des Ayres</h2> - <h4> Blois, Francia (2011 - 2012)</h4>
-        </li>
-        <p>
-            Bachillerato Literario.
-        </p>
-     </ul>
-
-     <ul>
-        <li>
-            <h2>Estudios secundarios - Esc. Simón Bolivar</h2> - <h4> Mendoza, Argentina (2006 - 2011)</h4>
-        </li>
-        <p>
-            Con orientación en Ciencias Naturales.
-        </p>
-     </ul>
-
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2><b></b>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged"> 
+                        
+                        <button type="button" class="btn btn-warning" routerLink="editedu/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button>
+                        
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button type="button" class="btn btn-danger" (click)="delete(Educacion.id)"><i class="bi bi-x-octagon"></i> BORRAR</button>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-
-</div>

@@ -14,23 +14,54 @@ div{
 
 /*estilo de la foto de perfil*/
 @media (min-width: 576px){
+#fotoDePerfil{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 0%;
+    top: 780px;
+ }
+
+ .descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+}
+
+/* PANTALLA CHICA*/
+
+@media (min-width: 1400px){
     #fotoDePerfil{
        position: absolute;
-       width: 15%;
+       width: 10%;
        border-radius: 100%;
        box-shadow: 3px 3px 3px grey;
-       left: 3%;
-       top: 600px;
+       left: 5%;
+       top: 780px;
     }
 }
 
+@media (min-width: 2800px){
+    #fotoDePerfil{
+       position: absolute;
+       width: 8%;
+       border-radius: 100%;
+       box-shadow: 3px 3px 3px grey;
+       left: 5%;
+       top: 780px;
+    }
+}
+
+/* PANTALLA GRANDE*/
     @media (max-width: 575px){
         #fotoDePerfil{
            position: absolute;
            width: 30%;
            border-radius: 100%;
            box-shadow: 3px 3px 3px grey;
-           left: 30%;
-           top: 950px;
+           left: 35%;
+           top: 1125px;
         }
     }

@@ -14,14 +14,18 @@ public class Experiencia {
     private int id;
     private String nombreE;
     private String descripcionE;
+    
+    //Constructores
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombre, String descripcionE) {
-        this.nombreE = nombre;
+    public Experiencia(String nombreE, String descripcionE) {
+        this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
+    
+    //Getters and setters
 
     public int getId() {
         return id;
@@ -31,12 +35,12 @@ public class Experiencia {
         this.id = id;
     }
 
-    public String getNombre() {
+    public String getNombreE() {
         return nombreE;
     }
 
-    public void setNombre(String nombre) {
-        this.nombreE = nombre;
+    public void setNombreE(String nombreE) {
+        this.nombreE = nombreE;
     }
 
     public String getDescripcionE() {
@@ -46,5 +50,4 @@ public class Experiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-
 }
