@@ -10,15 +10,27 @@ public class DtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    
+    @NotBlank
+    private String anioE;
 
     public DtoEducacion() {
     }
 
-    public DtoEducacion(String nombreE, String descripcionE) {
+    public DtoEducacion(String nombreE, String descripcionE, String anioE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.anioE = anioE;
     }
 
+    public String getAnioE(){
+        return anioE;
+    }
+    
+    public void setAnioE(String anioE){
+        this.anioE = anioE;
+    }
+    
     public String getNombreE() {
         return nombreE;
     }

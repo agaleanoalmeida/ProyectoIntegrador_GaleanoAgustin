@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = environment.URL + 'personas/';
+  URL = 'https://backendgaleano.herokuapp.com/personas/';
 
   constructor(private httpClient:HttpClient) {} 
 
@@ -24,9 +24,9 @@ export class PersonaService {
     return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
   }
   
-  // public save(Persona: persona): Observable<any>{
-  //   return this.httpClient.post<any>(this.URL + 'create', Persona);
-  // }
+//   public save(Persona: persona): Observable<any>{
+//   return this.httpClient.post<any>(this.URL + 'create', Persona);
+//  }
 
   // public delete(id: number): Observable<any>{
   //   return this.httpClient.delete<any>(this.URL + `delete/${id}`);

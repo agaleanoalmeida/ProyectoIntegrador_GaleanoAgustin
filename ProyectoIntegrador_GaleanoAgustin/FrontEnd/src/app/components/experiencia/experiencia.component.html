@@ -17,7 +17,10 @@
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
                     <td>
-                        <h3><b></b>{{Experiencia.nombreE}}</h3>
+                        <h3>{{Experiencia.nombreE}}</h3>
+                    </td>
+                    <td>
+                        <p class="periodo"><b>{{Experiencia.anioE}}</b></p>
                     </td>
                     <td>{{Experiencia.descripcionE}}</td>
                     <td *ngIf="isLogged"> 

@@ -14,15 +14,25 @@ public class Educacion {
     private int id;
     private String nombreE;
     private String descripcionE;
+    private String anioE;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String descripcionE, String anioE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.anioE = anioE;
     }
 
+    public String getAnioE(){
+        return anioE;
+    }
+    
+    public void setAnioE(String anioE){
+        this.anioE = anioE;
+        }
+    
     public int getId() {
         return id;
     }

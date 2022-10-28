@@ -1,4 +1,4 @@
-<body class="mogumbo">
+<section class="vh-100" style="background-color: #a1b5cb;">
 
     <div class="container" *ngIf="educacion">
         <div class="row">
@@ -15,6 +15,11 @@
                             [(ngModel)]="educacion.nombreE" required>
                     </div>
                     <div class="form-group">
+                        <label for="anioE">Periodo</label>
+                        <input type="text" class="form-control" id="anioE" name="anioE"
+                            [(ngModel)]="educacion.anioE" required>
+                    </div>
+                    <div class="form-group">
                         <label for="descripcionE">Descripcion de sus estudios</label>
                         <input type="text" class="form-control" id="descripcionE" name="descripcionE"
                             [(ngModel)]="educacion.descripcionE" required>
@@ -24,14 +29,15 @@
                     </button>
                 </form>
             </div>
+
+            <br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br>
+            <hr>
+
+            <br>
+            <p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
+            <br>
         </div>
     </div>
-</body>
-
-<footer>
-
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br>
-
-<p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
-</footer>
+</section>

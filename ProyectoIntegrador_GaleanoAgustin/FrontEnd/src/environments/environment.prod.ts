@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'frontendgaleano.firebaseapp.com',
     messagingSenderId: '886572600919',
   },
-  production: true
+  production: true,
+  URL: 'frontendgaleano.web.app/'
 };

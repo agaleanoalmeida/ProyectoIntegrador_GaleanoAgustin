@@ -1,4 +1,4 @@
-<body class="mogumbo">
+<section class="vh-100" style="background-color: #a1b5cb;">
 <div class="container" *ngIf="explab">
     <div class="row">
 
@@ -13,6 +13,11 @@
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="explab.nombreE" required>
                 </div>
                 <div class="form-group">
+                    <label for="anioE">Periodo</label>
+                    <input type="text" class="form-control" id="anioE" name="anioE" [(ngModel)]="explab.anioE" required>
+                </div>
+
+                <div class="form-group">
                     <label for="descripcionE">Descripcion de la tarea</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="explab.descripcionE" required>
                 </div>
@@ -21,14 +26,14 @@
                 </button>
             </form>
         </div>
+        <br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br>
+        <hr>
+
+        <br>
+        <p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
+        <br>
     </div>
 </div>
-</body>
-
-<footer>
-
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br>
-    
-    <p>Cualquier inconveniente comuniquese al correo <b>agaleanoalmeida@gmail.com</b></p>
-    </footer>
+</section>

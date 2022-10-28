@@ -1,5 +1,6 @@
 .row{
     padding: 20px;
+    background-color: #a1b5cb;
 }
 div{
     background-color: #a1b5cb;
@@ -20,7 +21,7 @@ div{
     border-radius: 100%;
     box-shadow: 3px 3px 3px grey;
     left: 0%;
-    top: 780px;
+    top: 750px;
  }
 
  .descripcion{
@@ -57,8 +58,8 @@ div{
 /* PANTALLA GRANDE*/
     @media (max-width: 575px){
         #fotoDePerfil{
-           position: absolute;
-           width: 30%;
+           /*position: absolute;*/
+           width: 80%;
            border-radius: 100%;
            box-shadow: 3px 3px 3px grey;
            left: 35%;
